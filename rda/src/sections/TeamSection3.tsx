@@ -16,7 +16,7 @@ export default function CardSpotlightDemo() {
         </ul>
       </div> */}
       <p className="text-neutral-300 mt-4 relative z-20 text-[18px]">
-      Royal Digital Agency's Videographer and Video Editing team is a dynamic duo that brings your vision to life. Our experienced team, with over eight years of expertise, specializes in capturing stunning visuals and transforming them into captivating stories. From the moment our skilled Videographer frames the perfect shot with our high-quality cameras, including drones, to the moment our talented Video Editor weaves magic with Adobe Premiere and After Effects, we create videos that leave a lasting impression. Our work empowers businesses to enhance their online presence and connect with their audience on a deeper level. Let us help you tell your story through the power of video.
+      Royal Digital Agency&apos;s Videographer and Video Editing team is a dynamic duo that brings your vision to life. Our experienced team, with over eight years of expertise, specializes in capturing stunning visuals and transforming them into captivating stories. From the moment our skilled Videographer frames the perfect shot with our high-quality cameras, including drones, to the moment our talented Video Editor weaves magic with Adobe Premiere and After Effects, we create videos that leave a lasting impression. Our work empowers businesses to enhance their online presence and connect with their audience on a deeper level. Let us help you tell your story through the power of video.
       </p>
     </CardSpotlight>
     

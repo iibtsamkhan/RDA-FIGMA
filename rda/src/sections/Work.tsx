@@ -45,8 +45,8 @@ export default function
                 </div>
                 <div className='flex flex-wrap bg-black mb-16'>
                     <div className='flex-1 bg-black'>
-                        <h1 className='w-[501px] h-[186px] justify-start flex text-[45px] font-bold leading-tight tracking-wide mt-[120px]'>We Speak Digital. Let's Get Your Brand Heard!</h1>
-                        <p className='w-[501px] h-[186px] justify-start flex text-[16px] leading-tight tracking-wide mt-[30px]'>We're a digital marketing team in Glendale that helps businesses like yours grow. We have experts who will create a custom plan to boost your online presence and reach more customers. Our proven methods and latest techniques will get your brand noticed and keep you ahead of the competition..</p>
+                        <h1 className='w-[501px] h-[186px] justify-start flex text-[45px] font-bold leading-tight tracking-wide mt-[120px]'>We Speak Digital. Let&apos;s Get Your Brand Heard!</h1>
+                        <p className='w-[501px] h-[186px] justify-start flex text-[16px] leading-tight tracking-wide mt-[30px]'>We&apos;re a digital marketing team in Glendale that helps businesses like yours grow. We have experts who will create a custom plan to boost your online presence and reach more customers. Our proven methods and latest techniques will get your brand noticed and keep you ahead of the competition..</p>
                         {/* <button className='flex-1 font-bold py-2 px-8 bg-transparent text-[#F1C560] justify-start text-[16px] border-2 border-[#F1C560'>Learn more</button> */}
                           <MagicButton
                             title="Learn more"

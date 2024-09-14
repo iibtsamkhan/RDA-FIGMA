@@ -16,7 +16,7 @@ export default function CardSpotlightDemo() {
         </ul>
       </div> */}
       <p className="text-neutral-300 mt-4 relative z-20 text-[18px]">
-      Royal Digital Agency's graphic design team is a powerhouse of creativity and expertise. With a combined experience of 4 years, our designers are highly proficient in crafting visually stunning designs across various platforms. From conceptualizing captivating UI/UX experiences on Figma to producing eye-catching social media graphics and striking visuals for websites and apps, our team excels in bringing brands to life through innovative design solutions. Our deep understanding of Canva, Adobe Photoshop, and Illustrator empowers us to deliver exceptional results that resonate with audiences and drive engagement.
+      Royal Digital Agency&apos;s graphic design team is a powerhouse of creativity and expertise. With a combined experience of 4 years, our designers are highly proficient in crafting visually stunning designs across various platforms. From conceptualizing captivating UI/UX experiences on Figma to producing eye-catching social media graphics and striking visuals for websites and apps, our team excels in bringing brands to life through innovative design solutions. Our deep understanding of Canva, Adobe Photoshop, and Illustrator empowers us to deliver exceptional results that resonate with audiences and drive engagement.
       </p>
     </CardSpotlight>
     

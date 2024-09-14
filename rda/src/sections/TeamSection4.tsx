@@ -16,7 +16,7 @@ export default function CardSpotlightDemo() {
         </ul>
       </div> */}
       <p className="text-neutral-300 mt-4 relative z-20 text-[18px]">
-      Our experienced social media team brings a decade of expertise to managing and marketing our clients' online presence. We specialize in transforming brands on popular platforms like Instagram, Facebook, Twitter, TikTok, and YouTube. From crafting compelling content to writing captivating captions, we're masters at using keywords to boost our clients' accounts to the top of search results. Our dedicated professionals ensure timely posts, increased engagement and views, wider reach, and effective hashtag utilization. Let our team elevate your online visibility and make your brand shine on social media.
+      Our experienced social media team brings a decade of expertise to managing and marketing our clients&apos; online presence. We specialize in transforming brands on popular platforms like Instagram, Facebook, Twitter, TikTok, and YouTube. From crafting compelling content to writing captivating captions, we&apos;re masters at using keywords to boost our clients&apos; accounts to the top of search results. Our dedicated professionals ensure timely posts, increased engagement and views, wider reach, and effective hashtag utilization. Let our team elevate your online visibility and make your brand shine on social media.
       </p>
     </CardSpotlight>
     

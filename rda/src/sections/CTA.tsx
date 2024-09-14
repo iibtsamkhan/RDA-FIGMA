@@ -52,7 +52,7 @@ export default function CTA() {
  
   <div className="flex-1 bg-black">
     <h1 className='text-[45px] w-[648px] h-[186px] font-bold leading-tight tracking-wide mb-4'>Revolutionize Your Business with Our Tailored Digital Solutions</h1>
-    <p className='text-[16px] w-[552px] h-[186px] leading-tight tracking-wide mb-6'>We're experts in taking businesses to the next level with personalized digital marketing plans. We use the latest technology and data analysis to understand what makes your customers tick. This way, we can create online campaigns that stand out from the crowd. We stay on top of all the latest trends in the digital world, so you don't have to. Our goal is simple: your success. Contact Royal Digital Agency today and see how we can help your brand reach new heights online!</p>
+    <p className='text-[16px] w-[552px] h-[186px] leading-tight tracking-wide mb-6'>We&apos;re experts in taking businesses to the next level with personalized digital marketing plans. We use the latest technology and data analysis to understand what makes your customers tick. This way, we can create online campaigns that stand out from the crowd. We stay on top of all the latest trends in the digital world, so you don&apos;t have to. Our goal is simple: your success. Contact Royal Digital Agency today and see how we can help your brand reach new heights online!</p>
     {/* <button className='font-bold py-2 px-8 bg-transparent text-[#F1C560] border-2 border-[#F1C560] text-[16px]'>Let’s Talk</button> */}
     <MagicButton
         title="Learn more"
