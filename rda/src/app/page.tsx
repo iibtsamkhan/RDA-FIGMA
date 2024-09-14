@@ -1,113 +1,116 @@
 import Image from "next/image";
+import Hero from "@/sections/hero"
+import ScrollSection from "@/sections/Scroll";
+// import NavBar from "@/sections/Nav";
+import BgImage from "../../public/Assets/Graphics/royal-cover.png"
+import Work from "@/sections/Work";
+import TextEffect from "@/sections/TextEffect";
+import Navbar from "@/components/Navbar/Navbar";
+import GlobeComponent from "@/sections/Globe";
+import LampBackgroundEffect from "../sections/LampBackground";
+import '@mantine/core/styles.css';
+import { useDisclosure } from '@mantine/hooks';
+import CallToAction from "@/sections/CTA";
+// import TestimonialItem from "@/components/TestimonialItem";
+// import { Testimonial } from '../../public/types';
+// import testimonials from '../../public/data';
+import TestimonialsScrollCard from "@/sections/MovingCards";
+import FooterSection from "@/components/Footer";
+import LogoSlider from "@/components/SliderComponent/Logo";
+import VelocityScroll from "@/components/Text/VelocityScroll";
+
+
+
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+        
+
+        {/* Section with Navbar Lamp Effect and Text Generation Effect*(Hero)  */}
+
+        <div className="w-full flex justify-center bg-[#000000] border-hero">
+          <Navbar />
+            {/* <NavBar /> */}
+            {/* <div className="flex justify-center items-center inset-0 overlay">
+              <Image
+              src={BgImage}
+              alt="rda logo"
+              width={2000}
+              height={1200}
+              />
+            </div>   */}
+            <LampBackgroundEffect />
+            <div className="flex justify-center w-[100%] h-[90vh] items-center inset-0 absolute ">
+              <main className="w-[100%] flex flex-col justify-center items-center overflow-hidden h-[90vh]">
+              <Hero />
+              </main>
+            </div>
         </div>
-      </div>
+        
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        {/* Section for Our work After HERO section uptil Globe Component */}
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        <div className="w-full flex justify-center bg-[#000000] mt-[100px]">
+          <div className="art -translate-x-0 -rotate-[45deg] bg-[#000000]"></div>          
+          {/* <h1 className="w-[1107px] h-[179px] text-[65px] font-bold leading-tight tracking-wide mt-[120px]">Your growth is our mission. Let's craft a unique roadmap to success, tailored just for you.</h1>  */}
+          <TextEffect />
+        </div>      
+        <div className="w-full flex justify-center mt-[150px] ml-[50px]  bg-background">
+          <Work/>
+          {/* <GlobeComponent  /> */}
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        {/* Small Banner section */}
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <div className="w-full h-[141px] bg-[#3D3D3D] flex items-center justify-center py-[100px] px-10 mb-10 mt-[70px]">
+              <h2 className="font-bold text-[48px] leading-tight tracking-wide text-[#FFFFFF] shadow-black text-center">We Design Experience, We Grow Businesses
+              We Develop Websites</h2>
+        </div>
+
+        {/* CTA  */}
+
+        <CallToAction />
+
+        {/* 2nd last section home */}
+
+        <div className="w-full h-[66px] flex items-center justify-center px-10 mt-[200px] ">
+          <h2 className="text-[45px] leading-tight tracking-wide font-bold text-[white] shadow-black">Let our clients tell you how we made a difference!</h2>
+        </div>
+
+        <TestimonialsScrollCard />
+
+        {/* <LogoSlider /> */}
+
+        {/* Section for ScrollSection */}
+
+        {/* <ScrollSection /> */}
+        <VelocityScroll
+        text="Get in Touch."
+        default_velocity={2}
+        className=" 
+          index 
+          text-center 
+          font-bold 
+          tracking-[-0.02em]
+          drop-shadow-xl 
+          text-white 
+          text-[2rem] 
+          sm:text-[2rem] 
+          md:text-[3rem] 
+          lg:text-[4rem] 
+          xl:text-[5rem] 
+          mb-14 
+          leading-[1rem] 
+          sm:leading-[1rem] 
+          md:leading-[2rem] 
+          lg:leading-[3rem] 
+          xl:leading-[4rem]"
+      />
+        <FooterSection />
+    </>
+  
   );
 }
