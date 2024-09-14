@@ -69,7 +69,7 @@ export default function Services() {
 
         <div className="w-[100%] max-w-[1200px] flex flex-col justify-between items-start mx-auto mt-32 bg-black gap-1">
             <p className="font-normal md:text-[20px] mb-10">OUR CHALLENGE</p>
-            <p className="font-bold md:text-[45px]">Develop a user-friendly mobile app and website that reflect the brand's personality and make it easy for both drivers and customers to find what they need.</p>
+            <p className="font-bold md:text-[45px]">Develop a user-friendly mobile app and website that reflect the brand&apos;s personality and make it easy for both drivers and customers to find what they need.</p>
             <Image 
             src={Img}
             alt="SkinScience"
@@ -119,7 +119,7 @@ export default function Services() {
         <div className="w-[100%] px-56 ml-36 mt-52 mb-10 flex items-start gap-16 justify-center bg-black">
         <div className="flex-1 bg-black">
             <h1 className='text-[45px] w-[648px] font-bold leading-tight tracking-wide mb-16'>Final Thoughts: Results & Impact</h1>
-            <p className='text-[16px] w-[552px] leading-tight tracking-wide mb-16'>Our Glendale-based team of digital marketing experts helps businesses of all kinds, from skincare and dentists to sports teams, clothing brands, and even delivery apps, achieve a strong online presence. We combine proven strategies with innovative solutions to grow your business in today's competitive market.</p>
+            <p className='text-[16px] w-[552px] leading-tight tracking-wide mb-16'>Our Glendale-based team of digital marketing experts helps businesses of all kinds, from skincare and dentists to sports teams, clothing brands, and even delivery apps, achieve a strong online presence. We combine proven strategies with innovative solutions to grow your business in today&apos;s competitive market.</p>
             {/* <button className='font-bold py-2 px-8 bg-transparent text-[#F1C560] border-2 border-[#F1C560] text-[16px]'>Let’s Talk</button> */}
             <MagicButton
                 title="Learn more"

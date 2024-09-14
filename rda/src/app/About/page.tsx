@@ -64,14 +64,14 @@ export default function About() {
             <div className="w-[50%] flex flex-col justify-center items-start py-5 mx-auto">
                 <h1 className="text-[50px] font-bold">Irina Akopyan</h1>
                 <h5 className="text-[18px]">Founder and Chief Executive Officer</h5>
-                <p className="text-[18px] leading-[143%] w-[792px] mt-10">Over the past 15 years, digital marketing has become more than just a career for me; it's a passion. As the Founder and CEO of Royal Digital Agency, I lead an incredible team of professionals dedicated to one thing: igniting digital growth for our clients.
+                <p className="text-[18px] leading-[143%] w-[792px] mt-10">Over the past 15 years, digital marketing has become more than just a career for me; it&apos;s a passion. As the Founder and CEO of Royal Digital Agency, I lead an incredible team of professionals dedicated to one thing: igniting digital growth for our clients.
                 <br />
                 <span className="py-5">
-                We take immense pride in collaborating with some of the best local businesses. From beauty salons to medical practices and sporting institutions, our diverse client portfolio reflects our commitment to delivering results across a wide range of industries. But our services extend beyond traditional digital marketing.  We've successfully developed and launched mobile applications, constantly pushing boundaries to find innovative solutions that elevate our clients' digital presence.
+                We take immense pride in collaborating with some of the best local businesses. From beauty salons to medical practices and sporting institutions, our diverse client portfolio reflects our commitment to delivering results across a wide range of industries. But our services extend beyond traditional digital marketing. We&apos;ve successfully developed and launched mobile applications, constantly pushing boundaries to find innovative solutions that elevate our clients&apos; digital presence.
                 </span>
                 <br />
                 <span className="py-5">
-                At Royal Digital Agency, we believe in complete client satisfaction. That's why we offer comprehensive marketing solutions, handling every aspect of your project from strategy to execution.  Our goal is simple: to help you achieve your business aspirations and deliver exceptional results that leave a lasting impact. Don't hesitate to contact us and discuss how Royal Digital Agency can help you take your business to the next level.
+                At Royal Digital Agency, we believe in complete client satisfaction. That&apos;s why we offer comprehensive marketing solutions, handling every aspect of your project from strategy to execution. Our goal is simple: to help you achieve your business aspirations and deliver exceptional results that leave a lasting impact. Don&apos;t hesitate to contact us and discuss how Royal Digital Agency can help you take your business to the next level.
                 </span>
                 </p>
             </div>
