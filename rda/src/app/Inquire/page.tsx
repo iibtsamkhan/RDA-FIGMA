@@ -8,7 +8,6 @@ import TextEffect from "@/sections/TextEffect";
 import Navbar from "@/components/Navbar/Navbar";
 import GlobeComponent from "@/sections/Globe";
 import LampBackgroundEffect from "../../sections/LampBackground";
-import '@mantine/core/styles.css';
 import { useDisclosure } from '@mantine/hooks';
 import CallToAction from "@/sections/CTA";
 import TestimonialsScrollCard from "@/sections/MovingCards";
