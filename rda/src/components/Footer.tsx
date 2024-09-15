@@ -13,7 +13,6 @@ const Footer = () => {
           <Link href="/" className="mb-10">
             <Image src={rda} alt="logo" width={120} height={29}/>
           </Link>
-
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
             {FOOTER_LINKS.map((columns) => (
               <FooterColumn title={columns.title}>
