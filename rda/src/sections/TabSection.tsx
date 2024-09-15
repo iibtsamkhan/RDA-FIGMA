@@ -6,7 +6,6 @@ import irina from "../../public/Assets/Graphics/image 5.png"
 import speedster from "../../public/Assets/Graphics/rdawork.png"
 import img2 from "../../public/Assets/Graphics/image 3.png"
 import img3 from "../../public/Assets/Graphics/image 4.png"
-import WorkCarousel from "@/sections/WorkCarousel"
 
 export default function TabsDemo() {
   const tabs = [

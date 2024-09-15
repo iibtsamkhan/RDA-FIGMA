@@ -5,7 +5,6 @@ import BgImage from "../../public/Assets/Graphics/royal-cover.png"
 import Work from "@/sections/Work";
 import TextEffect from "@/sections/TextEffect";
 import Navbar from "@/components/Navbar/Navbar";
-import GlobeComponent from "@/sections/Globe";
 import LampBackgroundEffect from "../../sections/LampBackground";
 import '@mantine/core/styles.css';
 import { useDisclosure } from '@mantine/hooks';

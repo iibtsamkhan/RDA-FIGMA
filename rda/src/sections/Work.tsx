@@ -4,13 +4,11 @@ import Image from "next/image";
 import img1 from "../../public/Assets/Graphics/row-1-column-1 2.png"
 import img2 from "../../public/Assets/Graphics/row-1-column-2 2.png"
 import img3 from "../../public/Assets/Graphics/row-1-column-3 2.png"
-import GlobeComponent from "@/sections/Globe";
-import Tbutton from "../components/Buttons/TertiaryButton";
 import MagicButton from "@/components/ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import CobeGlobe from "@/components/ui/CobeGlobe";
 
-export default function 
+export default function Work
 () {
   return (
     <div className='bg-black flex flex-col justify-center items-start mb-10'>
