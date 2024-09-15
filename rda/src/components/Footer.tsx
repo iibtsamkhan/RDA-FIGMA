@@ -6,7 +6,7 @@ import rda from "../../public/Assets/logo/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="flexCenter mb-24 w-full px-[230px] mt-20">
+    <footer className="flexCenter mb-24 w-full sm:px-[50px] mt-20">
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="flex flex-col items-start justify-center gap-[15%] md:flex-row">
           <Link href="/" className="mb-10">

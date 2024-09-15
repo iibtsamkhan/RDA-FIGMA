@@ -33,9 +33,9 @@ import mockup from "../../../public/Assets/Graphics/speedsTER APP MOCKUP 1.png"
 export default function Services() {
   return (
     <>
-        <div className='w-full flex justify-center overflow-hidden bg-[#000000]'>
-            <Navbar />
-        </div>
+        {/* <div className='w-full flex justify-center overflow-hidden bg-[#000000]'>
+           
+        </div> */}
 
         <div className="relative w-full h-[700px]">
             <Image 

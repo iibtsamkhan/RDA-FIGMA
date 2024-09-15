@@ -17,6 +17,7 @@ import TestimonialsScrollCard from "@/sections/MovingCards";
 import FooterSection from "@/components/Footer";
 import LogoSlider from "@/components/SliderComponent/Logo";
 import VelocityScroll from "@/components/Text/VelocityScroll";
+import Navigation from "@/components/Navbar/Navigation"
 
 
 
@@ -25,24 +26,16 @@ import VelocityScroll from "@/components/Text/VelocityScroll";
 export default function Home() {
   return (
     <>
-        
 
-        {/* Section with Navbar Lamp Effect and Text Generation Effect*(Hero)  */}
+    <div className="w-full overflow-x-hidden">
 
-        <div className="w-full flex justify-center bg-[#000000] border-hero">
-          <Navbar />
-            {/* <NavBar /> */}
-            {/* <div className="flex justify-center items-center inset-0 overlay">
-              <Image
-              src={BgImage}
-              alt="rda logo"
-              width={2000}
-              height={1200}
-              />
-            </div>   */}
+      {/* Section with Navbar Lamp Effect and Text Generation Effect*(Hero)  */}
+     
+      <div className="w-full flex justify-center bg-[#000000] border-hero">
+          
             <LampBackgroundEffect />
             <div className="flex justify-center w-[100%] h-[90vh] items-center inset-0 absolute ">
-              <main className="w-[100%] flex flex-col justify-center items-center overflow-hidden h-[90vh]">
+              <main className="w-[100%] md:w-[90%] flex flex-col justify-center items-center overflow-hidden h-[90vh]">
               <Hero />
               </main>
             </div>
@@ -52,20 +45,19 @@ export default function Home() {
 
         {/* Section for Our work After HERO section uptil Globe Component */}
 
-        <div className="w-full flex justify-center bg-[#000000] mt-[100px]">
+        <div className="w-full flex justify-center sm:px-5 items-start bg-[#000000] md:ml-[80px] mt-[100px] sm:ml-[20px]">
           <div className="art -translate-x-0 -rotate-[45deg] bg-[#000000]"></div>          
           {/* <h1 className="w-[1107px] h-[179px] text-[65px] font-bold leading-tight tracking-wide mt-[120px]">Your growth is our mission. Let's craft a unique roadmap to success, tailored just for you.</h1>  */}
           <TextEffect />
         </div>      
-        <div className="w-full flex justify-center mt-[150px] ml-[50px]  bg-background">
+        <div className="w-full flex justify-center mt-96 items-center  bg-background">
           <Work/>
-          {/* <GlobeComponent  /> */}
         </div>
 
         {/* Small Banner section */}
 
-        <div className="w-full h-[141px] bg-[#3D3D3D] flex items-center justify-center py-[100px] px-10 mb-10 mt-[70px]">
-              <h2 className="font-bold text-[48px] leading-tight tracking-wide text-[#FFFFFF] shadow-black text-center">We Design Experience, We Grow Businesses
+        <div className="w-full sm:py-[50px] h-[141px] bg-[#3D3D3D] flex items-center justify-center py-[100px] px-10 mb-10 mt-[70px]">
+              <h2 className="font-bold text-[48px] sm:text-[28px] leading-tight tracking-wide text-[#FFFFFF] shadow-black text-center">We Design Experience, We Grow Businesses
               We Develop Websites</h2>
         </div>
 
@@ -75,7 +67,7 @@ export default function Home() {
 
         {/* 2nd last section home */}
 
-        <div className="w-full h-[66px] flex items-center justify-center px-10 mt-[200px] ">
+        <div className="w-full sm:w-[90%] mx-auto h-[66px] flex items-center justify-center text-center px-10 mt-[200px] mb-20 ">
           <h2 className="text-[45px] leading-tight tracking-wide font-bold text-[white] shadow-black">Let our clients tell you how we made a difference!</h2>
         </div>
 
@@ -109,6 +101,9 @@ export default function Home() {
           xl:leading-[4rem]"
       />
         <FooterSection />
+
+    </div>
+
     </>
   
   );

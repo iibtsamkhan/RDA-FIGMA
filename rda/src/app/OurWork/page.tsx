@@ -24,9 +24,9 @@ import WorkTabs from "@/sections/TabSection";
 export default function Services() {
   return (
     <>
-        <div className='w-full flex justify-center overflow-hidden bg-[#000000]'>
+        {/* <div className='w-full flex justify-center overflow-hidden bg-[#000000]'>
             <Navbar />
-        </div>   
+        </div>    */}
                 <div className="max-w-[80%] mx-auto px-8 mt-[10rem]">
                     <h1 className="text-white text-[48px] font-bold leading-tight">
                     Our Work  

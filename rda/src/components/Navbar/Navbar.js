@@ -3,9 +3,7 @@ import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import rda from "../../../public/Assets/logo/logo.png";
-import MagicButton from "@/components/ui/MagicButton";
 import Link from "next/link";
-import { FaLocationArrow } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,30 +13,21 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed z-50 glassmorphism rounded-[1rem] w-[100%] lg:w-[80%] h-[10%] mt-[5rem] md:mt-[7rem] flex justify-between items-center px-36 lg:px-8">
+    <div className="fixed z-50 glassmorphism rounded-[1rem] w-full h-[10%] mt-[5rem] md:mt-[7rem] flex justify-between items-center px-8 lg:px-36">
+      {/* Logo */}
       <Link href={"/"}>
-        <div className="flex justify-end items-start" >
-          <Image src={rda} height={100} width={100} alt="Royal Digital Agency" />
+        <div className="flex justify-start items-center">
+          <Image src={rda} height={50} width={50} alt="Royal Digital Agency" />
         </div>
       </Link>
-      <div className=" xl:flex justify-center items-end ">
+
+      {/* Desktop Menu (Hidden on mobile) */}
+      <div className="hidden xl:flex justify-center items-center">
         <SlideTabs />
       </div>
-      {/* <div className="hidden xl:block">
-      <MagicButton
-          title="Book A Free Call"
-          icon={<FaLocationArrow />}
-          position="right"
-      />
-        <span className="ml-2">
-          <MagicButton
-            title="Get Free Audit"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </span>
-      </div> */}
-      {/* <div className="xl:hidden flex items-center">
+
+      {/* Hamburger Menu Button (Visible on mobile) */}
+      <div className="xl:hidden flex items-center mx-auto">
         <button onClick={toggleMenu} className="text-[#f5f5f5]">
           {!isOpen ? (
             <svg
@@ -72,96 +61,34 @@ const Navbar = () => {
             </svg>
           )}
         </button>
-      </div> */}
+      </div>
+
+      {/* Mobile Menu (Visible when isOpen is true) */}
       {isOpen && (
         <motion.div
-          initial={{ opacity: 0.8, y: 0 }}
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0.2, y: -20 }} // Fade away and move up slightly when exiting
-          transition={{
-            delay: 0.2,
-            duration: 0.3, // Adjust duration for a smoother fade out
-            ease: "easeInOut",
-          }}
-          className="absolute h-[100vh] w-full top-20 p-10 left-0 right-0 bg-transparent rounded-[1rem] flex flex-col items-start justify-start gap-32"
+          exit={{ opacity: 0.5, y: -20 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className="absolute top-0 left-0 right-0 w-full h-screen bg-black flex flex-col items-center justify-center"
         >
-          <ul className="flex text-3xl font-bold flex-col items-end">
-            <motion.li
-              onClick={toggleMenu}
-              initial={{ opacity: 0.5, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 0.3,
-                ease: "easeInOut",
-              }}
-              className="text-[#f5f5f5] py-2 link-hover"
-            >
-              <Link href={"/Services"}>Services </Link>
-            </motion.li>
-            <motion.li
-              onClick={toggleMenu}
-              initial={{ opacity: 0.5, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 0.4,
-                ease: "easeInOut",
-              }}
-              className="text-[#f5f5f5] py-2 link-hover"
-            >
-              <Link href="">Work </Link>
-            </motion.li>
-            <motion.li
-              onClick={toggleMenu}
-              initial={{ opacity: 0.5, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
-              }}
-              className="text-[#f5f5f5] py-2 link-hover"
-            >
-              <Link href={"/About"}>About </Link>
-            </motion.li>
-            <motion.li
-              onClick={toggleMenu}
-              initial={{ opacity: 0.5, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 0.6,
-                ease: "easeInOut",
-              }}
-              className="text-[#f5f5f5] py-2 link-hover"
-            >
-              <Link href="">Inquire </Link>
-            </motion.li>
-            <motion.li
-              onClick={toggleMenu}
-              initial={{ opacity: 0.5, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 0.7,
-                ease: "easeInOut",
-              }}
-              className="text-[#f5f5f5] py-2 link-hover"
-            >
-              <Link href="">Why us?</Link>
-            </motion.li>
+          <ul className="flex flex-col gap-6 text-2xl font-bold">
+            <li onClick={toggleMenu} className="text-[#f5f5f5] link-hover">
+              <Link href="/Services">Services</Link>
+            </li>
+            <li onClick={toggleMenu} className="text-[#f5f5f5] link-hover">
+              <Link href="/OurWork">Work</Link>
+            </li>
+            <li onClick={toggleMenu} className="text-[#f5f5f5] link-hover">
+              <Link href="/About">About</Link>
+            </li>
+            <li onClick={toggleMenu} className="text-[#f5f5f5] link-hover">
+              <Link href="/Inquire">Inquire</Link>
+            </li>
+            <li onClick={toggleMenu} className="text-[#f5f5f5] link-hover">
+              <Link href="/CaseStudies">Case Studies</Link>
+            </li>
           </ul>
-          {/* <div className="py-4 flex flex-col gap-3" onClick={toggleMenu}>
-            <BtnPrimary
-              url=""
-              title="Book a Free Call"
-            />
-            <BtnLight
-              title="Get Free Audit"
-              url=""
-            />
-          </div> */}
         </motion.div>
       )}
     </div>
@@ -180,27 +107,27 @@ const SlideTabs = () => {
   return (
     <ul
       onMouseLeave={() => {
-        setPosition((pv) => ({
-          ...pv,
+        setPosition((prev) => ({
+          ...prev,
           opacity: 0,
         }));
       }}
       className="relative mx-auto flex w-fit p-1"
     >
       <Tab setPosition={setPosition}>
-        <Link href={"/Services"}>Services </Link>
+        <Link href="/Services">Services</Link>
       </Tab>
       <Tab setPosition={setPosition}>
-        <Link href="/OurWork">Work </Link>
+        <Link href="/OurWork">Work</Link>
       </Tab>
       <Tab setPosition={setPosition}>
-        <Link href={"/About"}>About </Link>
+        <Link href="/About">About</Link>
       </Tab>
       <Tab setPosition={setPosition}>
-        <Link href="/Inquire">Inquire </Link>
+        <Link href="/Inquire">Inquire</Link>
       </Tab>
       <Tab setPosition={setPosition}>
-        <Link href="/CaseStudies">Case Studies </Link>
+        <Link href="/CaseStudies">Case Studies</Link>
       </Tab>
       <Cursor position={position} />
     </ul>
@@ -234,10 +161,8 @@ const Tab = ({ children, setPosition }) => {
 const Cursor = ({ position }) => {
   return (
     <motion.li
-      animate={{
-        ...position,
-      }}
-      className="absolute z-0 h-7 rounded-[1rem]  bg-[#F9C349] md:h-12"
+      animate={position}
+      className="absolute z-0 h-7 rounded-[1rem] bg-[#F9C349] md:h-12"
     />
   );
 };

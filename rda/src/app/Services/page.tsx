@@ -27,9 +27,6 @@ import ServiceCard from "@/sections/GlareCard";
 export default function Services() {
   return (
     <>
-        <div className='w-full flex justify-center overflow-hidden bg-[#000000]'>
-            <Navbar />
-        </div>
 
         <div className="relative w-full h-[700px]">
             <Image 

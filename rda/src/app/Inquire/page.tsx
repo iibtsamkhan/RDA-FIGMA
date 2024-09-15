@@ -25,9 +25,6 @@ export default function Inquire() {
 
   return (
     <>
-        <div className='w-full flex justify-center overflow-hidden bg-[#000000]'>
-        <Navbar />
-        </div>
 
         <div className="max-w-[80%] mx-auto px-8 mt-[10rem]">
         <h1 className="text-[60px] font-bold w-[646px] h-[90px] leading-[auto]">Let’s talk</h1>

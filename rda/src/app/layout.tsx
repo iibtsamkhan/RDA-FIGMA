@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import customCursor from "../styles/Cursor.module.css";
 import Cursor from "@/components/Cursor/CustomCursor";
+import Navigation from "@/components/Navbar/Navigation"
 
 const font = Poppins({ subsets: ["latin"], weight:["400","500","600","700","800","900"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={font.className}>
       {/* <Cursor /> */}
+      <Navigation />
       <ThemeProvider
             attribute="class"
             defaultTheme="dark"

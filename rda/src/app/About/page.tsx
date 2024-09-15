@@ -29,7 +29,6 @@ export default function About() {
     return (
       <>
         <div className="w-full flex justify-center overflow-hidden bg-[#000000]">
-            <Navbar />
             <Cards />
         </div>
         <div className=" bg-[#3D3D3D] w-full flex justify-center overflow-hidden mt-8">

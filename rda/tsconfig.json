@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.tsx", "src/components/Text/WordPullUp.tsx", "src/components/Footer.tsx", "src/components/ui/CobeGlobe.tsx", "src/components/ui/CobeGlobe.msx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.tsx", "src/components/Text/WordPullUp.tsx", "src/components/Footer.tsx", "src/components/ui/CobeGlobe.tsx", "src/components/ui/CobeGlobe.msx", "src/components/Navbar/Navigation.js"],
   "exclude": ["node_modules"]
 }
